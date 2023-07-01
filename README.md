@@ -6,13 +6,13 @@
 
 ![Imgur](https://i.imgur.com/j7bcyiM.png)
 
+I will be creating a Pokemon stats viewer that takes the information of the pokemon selected from the cascading dropdown menu and lists them out like a Pokedex.
+
 ### Built With
 
 I will be using CSS/HTML/JavaScript and JQuery
 
 [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
