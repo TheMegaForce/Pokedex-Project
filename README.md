@@ -2,11 +2,9 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## Template of the Project
 
-![Imgur](https://i.imgur.com/S6lbqYE.png)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+![Imgur](https://i.imgur.com/j7bcyiM.png)
 
 ### Built With
 
