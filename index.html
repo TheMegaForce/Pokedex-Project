@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pokedex</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter&family=Poiret+One&display=swap"
+			rel="stylesheet"
+		/>
 		<script
 			src="https://code.jquery.com/jquery-3.7.0.js"
 			integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -12,7 +18,22 @@
 		></script>
 		<script src="js/app.js"></script>
 	</head>
+
 	<body>
-		<h1>Test</h1>
+		<div class="wrapper">
+			<div class="box pokeImg">
+				<img
+					id="pokemon-img"
+					src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+				/>
+			</div>
+			<div class="box pokeName">Select a Pokemon ---></div>
+			<div class="box type1">Type</div>
+			<div class="box type2">Type 2</div>
+			<div class="box height">Height</div>
+			<div class="box weight">Weight</div>
+			<div class="box HAD">HP: ATK: DEF:</div>
+			<div id="pokeList" class="box pokeList"></div>
+		</div>
 	</body>
 </html>
