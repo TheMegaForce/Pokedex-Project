@@ -4,7 +4,7 @@
 
 ## Template of the Project
 
-![Imgur](https://i.imgur.com/j7bcyiM.png)
+![Imgur](https://imgur.com/tzs2dwx.png)
 
 I will be creating a Pokemon stats viewer that takes the information of the pokemon selected from the cascading dropdown menu and lists them out like a Pokedex.
 
