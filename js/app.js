@@ -25,28 +25,47 @@ async function getPokemon(num) {
 
 	let res = await fetch(url);
 	let pokemon = await res.json();
+	console.log(pokemon);
 
 	let pokeName = pokemon["name"];
-	let pokeType = pokemon["types"];
+
+	let pokeType1 = pokemon["types"][0]["type"]["name"];
+	let pokeType2 = pokemon["types"][1]
+		? pokemon["types"][1]["type"]["name"]
+		: pokemon["types"][0]["type"]["name"];
+
 	let pokeHeight = pokemon["height"];
 	let pokeWeight = pokemon["weight"];
 	let pokeImg = pokemon["sprites"]["front_default"];
-
-	res = await fetch(pokemon["species"]["url"]);
-	let pokeDesc = await res.json();
-
-	pokeDesc = pokeDesc["flavor_text_entries"][9]["flavor_text"];
+	let pokeHP = pokemon["stats"][0]["base_stat"];
+	let pokeATK = pokemon["stats"][1]["base_stat"];
+	let pokeDEF = pokemon["stats"][2]["base_stat"];
 
 	pokedex[num] = {
 		name: pokeName,
 		img: pokeImg,
-		types: pokeType,
-		desc: pokeDesc,
+		type1: pokeType1,
+		type2: pokeType2,
+		// desc: pokeDesc,
 		height: pokeHeight,
 		weight: pokeWeight,
+		hp: pokeHP,
+		atk: pokeATK,
+		def: pokeDEF,
 	};
 }
 
 function updatePokemon() {
 	document.getElementById("pokemon-img").src = pokedex[this.id]["img"];
+	document.getElementById("height").innerText =
+		"Height: " + pokedex[this.id]["height"];
+	document.getElementById("weight").textContent =
+		"Weight: " + pokedex[this.id]["weight"];
+	document.getElementById("type1").innerText =
+		pokedex[this.id]["type1"].toUpperCase();
+	document.getElementById("type2").innerText =
+		pokedex[this.id]["type2"].toUpperCase();
+	document.getElementById("HP").innerText = " " + pokedex[this.id]["hp"];
+	document.getElementById("ATK").innerText = " " + pokedex[this.id]["atk"];
+	document.getElementById("DEF").innerText = " " + pokedex[this.id]["def"];
 }
