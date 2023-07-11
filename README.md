@@ -2,6 +2,10 @@
 
 <!-- ABOUT THE PROJECT -->
 
+## Deployed Site
+
+https://themegaforce.github.io/Pokedex-Project/
+
 ## Template of the Project
 
 ![Imgur](https://imgur.com/tzs2dwx.png)
